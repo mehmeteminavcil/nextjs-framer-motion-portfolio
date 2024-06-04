@@ -5,13 +5,13 @@
 import * as Sentry from "@sentry/nextjs";
 
 Sentry.init({
-  dsn: "https://0e7d17b11ff7cef71f6a26fcbe7b6840@o4507368968421376.ingest.de.sentry.io/4507368978972752",
+  dsn: "https://10ec8b97d95c4ea7d0f53b1054f06de1@o4507368968421376.ingest.de.sentry.io/4507374391263312",
 
   // Adjust this value in production, or use tracesSampler for greater control
   tracesSampleRate: 1,
 
   // Setting this option to true will print useful information to the console while you're setting up Sentry.
-  debug: true,
+  debug: false,
 
   replaysOnErrorSampleRate: 1.0,
 
@@ -28,7 +28,7 @@ Sentry.init({
     }),
     Sentry.feedbackIntegration({
       // Additional SDK configuration goes in here, for example:
-      colorScheme: "dark",
+      colorScheme: "system",
     }),
   ],
 });
